@@ -52,8 +52,8 @@ echo "Log notice file /var/log/tor/notices.log
 VirtualAddrNetwork 10.192.0.0/10
 AutomapHostsSuffixes .onion,.exit
 AutomapHostsOnResolve 1
-TransPort 192.168.4.1:9040
-DNSPort 192.168.4.1:53" >> /etc/tor/torrc
+TransPort 0.0.0.0:9040
+DNSPort 0.0.0.0:53" >> /etc/tor/torrc
 
 echo "$(tput setaf 6)Flushing old IP tables...$(tput sgr0)"
 iptables -F
